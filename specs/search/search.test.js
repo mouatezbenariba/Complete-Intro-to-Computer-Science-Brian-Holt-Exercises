@@ -3,12 +3,22 @@
 //
 // it's up to you what to return if the object isn't found (we're not testing that)
 
+const { indexOf } = require("lodash");
+
 function linearSearch(id, array) {
   // code goes here
 }
 
 function binarySearch(id, array) {
-  // code goes here
+  let result = [...array];
+  for(let i = 0; i < array.length; i++) {
+    let middle = array[array.length / 2];
+    if (middle.id === id) {
+      return result.push(middle);
+    } else if(middle.id > id) {
+      result = array.slice(0, indexOf(middle))
+    }
+  }
 }
 
 // unit tests

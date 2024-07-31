@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "The exercises for the Complete Intro to Algorithms",
   "main": "index.html",
-  "scripts": {
-    "start": "parcel index.html",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "scripts": {
+      "start": "parcel index.html",
+      "test": "jest",
+      "test:watch": "jest --watch"
   },
   "dependencies": {
     "lodash": "4.17.21",
